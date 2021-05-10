@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.col-menu{
+    height: 100vh;
+    background-image: url(../img/fondoPresentacion.jpg);
+    background-size: cover;
+    /*background-position-y: 100px;
+    */background-repeat: no-repeat;
+    transition: 700ms all ease;
+    -moz-transition: 700ms all ease;
+    -ms-transition: 700ms all ease;
+    -o-transition: 700ms all ease;
+    -webkit-transition: 700ms all ease;
+}
+
+.clase-row{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.eat{
+    margin-left: 50px;
+    width: 100%;
+}
+
+
+.nav-opciones{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    z-index: 10000;
+    width: 80%!important;
+    height: 100px;
+}
+.nav-opciones a{
+    color: black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+.nav-opciones a:hover{
+    font-weight: 600;
+    color: black;
+}
+
+.inicio{
+    width: 20px;
+}
+.menu{
+    width: 30px;
+}
+.especialidad{
+    width: 60px;
+}
+.reservacion{
+    width: 70px;
+}
+
+.contacto{
+    width: 35px;
+}
+
+.col-menu1{
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu1-info{
+    width: 45%;
+    height: 75%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    position: absolute;
+    left: 0;
+
+}
+.linea{
+    width: 90px;
+    border-bottom: 1px solid #6a6a6a;
+    margin-right: 14px;
+}
+.linea2{
+    width: 90px;
+    border-bottom: 1px solid white;
+    margin-right: 14px;
+}
+
+.discover{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight:600;
+    color: #6a6a6a;
+}
+.bienvenido{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    font-weight:600;
+    right: 0;
+    color: #6a6a6a;
+}
+.circulos{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left:0;
+    bottom: 0%;
+}
+
+.circulitos{
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+.circulitos2{
+    height: 8px;
+    width: 8px;
+    margin-right: 15px;
+    background: #6a6a6a;
+    border-radius: 100%;
+    color: #6a6a6a;
+    cursor: pointer;
+}
+
+.circulitos2-seleccionado{
+    width: 12px;
+    height: 12px;
+    background: #fb5000;
+    color: #fb5000;
+    cursor: pointer;
+}
+.descubre{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+.btn-menu:hover{
+    color: white;
+}
+
+.btn-menu{
+    background: #fb5000;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+.cont-btn{
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 100px;
+}
+
+.eat h2{
+    font-weight: 900;
+    width: 85%;
+    padding-left: 50px;
+    font-size: 27px;
+    margin-top: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.circulos-fondo{
+    width: 100px; 
+    height: 400px; 
+    position: absolute; 
+    right: 0; 
+    top:40%;
+    text-align: center;
+}
+
+.circulos-fondo p{
+    margin: 0;
+}
+
+.img-comida{
+    width: 100%;
+    height: 450px;
+}
+
+.sobre{
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.seccion2{
+    margin-top: 100px!important; 
+    height: 550px; 
+    position: relative;
+    max-width: 1554px;
+    margin: auto;
+}
+
+.welcome{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #fb5000;
+}
+
+.text-manglar{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.btn2{
+    text-align: right;
+    margin-top: 35px;
+}
+
+.sobre-info{
+    padding-left: 10%;
+    width: 87%;
+    margin-top: 50px;
+
+}
+
+.seccion3{
+    margin-top: 100px!important; 
+    padding: 100px; 
+    height: auto; 
+    position: relative;
+    margin: auto;
+    max-width: 1554px;
+}
+
+.categorias{
+    margin: auto;
+    width: 45%;
+}
+
+.categoria-img{
+    height: 113px;
+    width: 306px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.categoria-img img{
+    width: 200px;
+    /* height: 130px; */
+    overflow: hidden;
+}
+
+
+.info-categorias{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    padding: 20px 0px;
+}
+
+.categoria-texto{
+    margin-left: 15px;
+}
+
+.categoria-texto h2{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.categoria-texto p{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+
+.titulos{
+    text-align: center;
+    font-family: 'Fjalla One';
+    letter-spacing: 2px;
+}
+
+.mapa{
+    background: rgba(255,128,0, .6);
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+    height: 450px;
+}
+
+.ver-mas{
+    BACKGROUND: BLACK;
+    COLOR: WHITE;
+    WIDTH: 200PX;
+    HEIGHT: 50PX;
+    DISPLAY: FLEX;
+    JUSTIFY-CONTENT: CENTER;
+    ALIGN-ITEMS: CENTER;
+    MARGIN: AUTO;
+    FONT-FAMILY: 'Open Sans';
+    LETTER-SPACING: 1PX;
+    margin-top: 25px;
+}
+
+.redes{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.icon:hover{
+    color: #fb5000;
+    transition: 600ms all ease;
+    -webkit-transition: 600ms all ease;
+    -moz-transition: 600ms all ease;
+    -ms-transition: 600ms all ease;
+    -o-transition: 600ms all ease;
+}
+
