@@ -22,3 +22,25 @@ function cambiarFondo(x) {
         circulo2.classList.remove("circulitos2-seleccionado");
     }
 }
+
+
+// MENU FIJO
+let menuchico = document.getElementById('menufijo');
+let menu = document.getElementById('menu');
+let aaa = document.getElementById('imgg');
+let logo = document.getElementById('logofijo');
+
+window.addEventListener('scroll', function(){
+if((window.pageYOffset) > 35){
+    menu.classList.add('nav3');                                    
+    aaa.classList.add('mg');                                    
+    logo.classList.add('logo-fijo');      
+    logo.style.display = "block";                              
+}
+else{
+    menu.classList.remove('nav3');                                    
+    aaa.classList.remove('mg');                                    
+    logo.style.display = "none";                              
+}
+
+})   

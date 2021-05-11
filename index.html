@@ -23,10 +23,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-    <section style="width: 100%; position: relative;max-width: 1554px;margin: auto;">
+    <section class="seccion1">
 
         <div class="circulos-fondo">
             <p> <svg onclick="cambiarFondo(1)" id="circulo1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2 circulitos2-seleccionado" viewBox="0 0 16 16">
@@ -41,22 +44,61 @@
 
         <div class="container">
             <div class="row">
+
+              <!-- MENU CELULAR -->
+              <nav class="navbar navbar-expand-lg navbar-light fixed-top celular manu-movil" >
+                <div class="container-fluid" style="padding-left: 0">
+                  <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button> -->
+                  <svg class="icono-menu"  data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                  <a class="navbar-brand" href="#" style="    margin: auto;font-size: 31px;">Navbar</a>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center" >
+                      <br>
+                      <a class="nav-link "aria-current="page" href="#">Inicio</a>
+                      <a class="nav-link" href="#">Menu</a>
+                      <a class="nav-link" href="#">Especialidades</a>
+                      <a class="nav-link" href="#">Reservaciónes</a>
+                      <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+              
                 <div class="col-md-5 col-menu1 ">
+                      <div class="cont-img1">
+                        <img src="img/CAKE.jpg" class="img-fijo2"  style="width: 150px;" alt="">
+                      </div>
+
                         <div class=" menu1-info">
                           <div class="discover">
                             <p class="linea"></p>
-                            <!-- <p class="descubre"> Discovery your taste</p>    -->
+                    
                             <p class="descubre"> Descubre tu gusto</p>   
                           </div>
                           <div class="eat">
                             <h2>Coma alimentos saludables y alimentos naturales</h2>
                           </div>
                           <div class="cont-btn">
-                              <a class="btn-menu" href="#">Descubrir Menu <span><svg style="margin-left: 10px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                              <a class="btn-menu" href="#">Descubrir Menu <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right icono" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                               </svg></span></a>
                           </div>
-
+                          <div class="circulos-fondo2">
+                            <p> <svg onclick="cambiarFondo(1)" id="circulo1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2 circulitos2-seleccionado" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                              </svg></p> <p> <svg onclick="cambiarFondo(2)" id="circulo2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                              </svg></p> <p> <svg onclick="cambiarFondo(3)" id="circulo3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                              </svg></p> 
+                              </svg></p>
+                          </div>
+<!-- 
                           <div class="circulos">
                             <p class="linea"></p>
                             <p> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-circle circulitos" viewBox="0 0 16 16">
@@ -68,25 +110,30 @@
                             <p> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-circle circulitos" viewBox="0 0 16 16">
                                 <path style="color: #bebec0;" d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                               </svg></p>   
-                          </div>
+                          </div> -->
                         </div>
                 </div>
 
-                <div class="col-md-7 col-menu" id="fondo">
+                <div class="col-md-7 col-menu" id="fondo" >
                     <!-- MENU FIJO  -->
-                    <div class="row clase-row"  id="menu">
+                      <div>
+                      </div>
+                      <div class="row clase-row"  id="menu">
                         <div class="nav-opciones me-right">
-                            <a class="inicio" href="">Inicio</a>
+                          <div class="logoimg" id="imgg">
+                          <img id="logofijo" class="img-fijo" src="img/CAKE.jpg"  alt="">
+                        </div>
+                          <a class="inicio" href="">Inicio</a>
                             <a class="menu" href="#">Menu</a>
                             <a class="especialidad"href="#">Especialidades</a>
                             <a class="reservacion" href="#">Reservaciones</a>
                             <a class="contacto" href="#" class="btn-contactanos">Contacto</a> 
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                              </svg> -->
-                        </div>
+                          </div>
                     </div>
                 </div>
+
+                
+                
             </div>
         </div>
     </section>
@@ -110,20 +157,20 @@
 
               <p style="font-family: 'Open Sans', sans-serif; font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo numquam, necessitatibus, ut delectus consequuntur aliquam, ex ea impedit laboriosam maxime debitis nihil! Ipsum magni esse perspiciatis numquam consequuntur maiores expedita!</p>
               <p style="font-family: 'Open Sans', sans-serif; font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo numquam, necessitatibus, ut delectus consequuntur aliquam, ex ea impedit laboriosam maxime debitis nihil! Ipsum magni esse perspiciatis numquam consequuntur maiores expedita!</p>  
-              <!-- <div class="cont-btn btn2">
-                <a class="btn-menu" href="#">Obtener dirección <span><svg style="margin-left: 10px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <div class="cont-btn btn2">
+                <a class="btn-menu" href="#">Obtener dirección <span><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right icono" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                 </svg></span></a>
-            </div> -->
-
-            <a href="https://twitter.com/Dave_Conner" class="btn btn-1 negro" style="font-size: 10px; padding-top: 12px; background: #fb5000!important;">
+            </div>
+<!-- 
+            <a class="btn btn-1 negro" style="font-size: 10px; padding-top: 12px; background: #fb5000!important;">
               <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
               </svg>
               Obtener dirección <span><svg style="margin-left: 5px;width: 12px;height: 25px;height: 24px;position: unset;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
               </svg></span>
-            </a>
+            </a> -->
 
             </div>
           </div>
@@ -147,8 +194,11 @@
                 <!-- <img src="img/fresa.jpg" alt=""> -->
               </div>
               <div class="categoria-texto">
-                <h2 >MOUSSE DE FRESA Y MENTA <span style="font-weight: 700;">$100.00</span></h2>
-                <p style="font-size: 11px;">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <div class="textoyprecio">
+                  <h2 >MOUSSE DE FRESA Y MENTA </h2>
+                  <span class="precio">$100.00</span>
+                </div>
+                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
               </div>
             </div>
             <div class="info-categorias">
@@ -156,8 +206,11 @@
                 <!-- <img src="img/ENSALADA.jpg" alt=""> -->
               </div>
               <div class="categoria-texto">
-                <h2 >ENSALADA DE CANASTA DE FRUTAS DEL BOSQUE <span style="font-weight: 700;">$400.00</span></h2>
-                <p style="font-size: 11px;">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <div class="textoyprecio">
+                  <h2 >ENSALADA DE CANASTA DE FRUTAS DEL BOSQUE </h2>
+                  <span class="precio">$400.00</span>
+                </div>
+                  <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
               </div>
             </div>
           </div>
@@ -169,8 +222,11 @@
                 <!-- <img src="img/fresa.jpg" alt=""> -->
               </div>
               <div class="categoria-texto">
-                <h2 >PANNA COTTA ITALIANA  <span style="font-weight: 700;">$90.00</span></h2>
-                <p style="font-size: 11px;">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <div class="textoyprecio">
+                  <h2 >PANNA COTTA ITALIANA  </h2>
+                  <span class="precio">$90.00</span>
+                </div>
+                  <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
               </div>
             </div>
             <div class="info-categorias">
@@ -178,8 +234,11 @@
                 <!-- <img src="img/ENSALADA.jpg" alt=""> -->
               </div>
               <div class="categoria-texto">
-                <h2 >PASTEL DE AVELLANAS <span style="font-weight: 700;">$120.00</span></h2>
-                <p style="font-size: 11px;">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <div class="textoyprecio">
+                  <h2 >PASTEL DE AVELLANAS </h2>
+                  <span class="precio">$120.00</span>
+                </div>
+                  <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
               </div>
             </div>
             <div class="info-categorias">
@@ -187,8 +246,11 @@
                 <!-- <img src="img/ENSALADA.jpg" alt=""> -->
               </div>
               <div class="categoria-texto">
-                <h2 >PASTEL DE CREMA BATIDA Y CHOCOLATE <span style="font-weight: 700;">$160.00</span></h2>
-                <p style="font-size: 11px;">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <div class="textoyprecio">
+                  <h2 >PASTEL DE CREMA BATIDA Y CHOCOLATE </h2>
+                  <span class="precio">$160.00</span>
+                </div>
+                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
               </div>
             </div>
             <div class="info-categorias">
@@ -196,8 +258,11 @@
                 <!-- <img src="img/ENSALADA.jpg" alt=""> -->
               </div>
               <div class="categoria-texto">
-                <h2 >PASTEL EMPANADO CON CEREZAS <span style="font-weight: 700;">$200.00</span></h2>
-                <p style="font-size: 11px;">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <div class="textoyprecio">
+                  <h2 >PASTEL EMPANADO CON CEREZAS </h2>
+                  <span class="precio">$200.00</span>
+                </div>
+                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
               </div>
             </div>
           </div>
@@ -209,8 +274,11 @@
                 <!-- <img src="img/fresa.jpg" alt=""> -->
               </div>
               <div class="categoria-texto">
-                <h2 >HELADO DE FRUTAS DEL BOSQUE <span style="font-weight: 700;">$100.00</span></h2>
-                <p style="font-size: 11px;">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <div class="textoyprecio">
+                  <h2 >HELADO DE FRUTAS DEL BOSQUE </h2>
+                  <span class="precio">$100.00</span>
+                </div>
+                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
               </div>
             </div>
             <div class="info-categorias">
@@ -218,8 +286,11 @@
                 <!-- <img src="img/ENSALADA.jpg" alt=""> -->
               </div>
               <div class="categoria-texto">
-                <h2 >FRESA CON VAINILLA <span style="font-weight: 700;">$400.00</span></h2>
-                <p style="font-size: 11px;">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <div class="textoyprecio">
+                  <h2 >FRESA CON VAINILLA </h2>
+                  <span class="precio">$400.00</span>
+                </div>
+                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
               </div>
             </div>
           </div>
@@ -231,14 +302,14 @@
 
     <div class="seccion4">
       <div class="container" style="position: relative; height: 450px;">
-        <div style="position: absolute; top:20%; left: 28%; z-index: 10000000; text-align: center;">
-          <h3 style="font-size: 20px;font-family: 'Open Sans';font-weight: 700; color: black;">COMO LLEGAR</h3>
+        <div class="mapa-contenido">
+          <h3 class="mapa-texto">COMO LLEGAR</h3>
           <p style="font-family: 'Great Vibes', cursive; font-size: 60px; color: black;">Locallizacion del Restaurante</p>
-          <p style="font-size: 20px;font-family: 'Open Sans';font-weight: 700; color: black;">880 COLONIA CENTRO, LOS MOCHIS</p>
-          <a href="https://twitter.com/Dave_Conner" class="btn btn-1 negro" style="font-size: 15px;">
-            <svg>
-              <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-            </svg>
+          <p class="mapa-texto">880 COLONIA CENTRO, LOS MOCHIS</p>
+
+          
+          
+          <a class="btn btn-1 negro" style="font-size: 15px; border-radius: 0;">
             VER EN EL MAPA
           </a>
         </div>
