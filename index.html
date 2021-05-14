@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animate.css">
 
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     
@@ -31,47 +32,44 @@
 
     <section class="seccion1">
 
-        <div class="circulos-fondo">
-            <p> <svg onclick="cambiarFondo(1)" id="circulo1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2 circulitos2-seleccionado" viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-              </svg></p> <p> <svg onclick="cambiarFondo(2)" id="circulo2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2" viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-              </svg></p> <p> <svg onclick="cambiarFondo(3)" id="circulo3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2" viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-              </svg></p> 
-              </svg></p>
-        </div>
+           <div class="circulos-fondo">
+                <p> <svg onclick="cambiarFondo(1, 'h')" id="circulo1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2 circulitos2-seleccionado" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  </svg>
+                </p>
+                <p> <svg onclick="cambiarFondo(2, 'h')" id="circulo2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  </svg>
+                </p> 
+                <p><svg onclick="cambiarFondo(3, 'h')" id="circulo3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  </svg>
+                </p> 
+           </div>
 
         <div class="container">
             <div class="row">
 
               <!-- MENU CELULAR -->
               <nav class="navbar navbar-expand-lg navbar-light fixed-top celular manu-movil" >
-                <div class="container-fluid" style="padding-left: 0">
-                  <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button> -->
+                <div class="container-fluid" style="padding: 0">
                   <svg class="icono-menu"  data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                     </svg>
-                  <a class="navbar-brand" href="#" style="    margin: auto;font-size: 31px;">Navbar</a>
+                  <img class="navbar-brand"  src="img/logoTopManglar.svg" style="width: 60px;margin: auto;" alt="">
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav text-center" >
+                    <div class="navbar-nav text-center opciones-movil" >
                       <br>
                       <a class="nav-link "aria-current="page" href="#">Inicio</a>
-                      <a class="nav-link" href="#">Menu</a>
-                      <a class="nav-link" href="#">Especialidades</a>
-                      <a class="nav-link" href="#">Reservaciónes</a>
-                      <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                      <a class="nav-link" href="#menuprincipal">Menu</a>
+                      <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
                     </div>
                   </div>
                 </div>
               </nav>
-
-              
-                <div class="col-md-5 col-menu1 ">
+                <div class="col-md-5 col-menu1">
                       <div class="cont-img1">
-                        <img src="img/CAKE.jpg" class="img-fijo2"  style="width: 150px;" alt="">
+                        <img src="img/logoTopManglar.svg" class="img-fijo2" id="img-fijo2" alt="">
                       </div>
 
                         <div class=" menu1-info">
@@ -89,51 +87,51 @@
                               </svg></span></a>
                           </div>
                           <div class="circulos-fondo2">
-                            <p> <svg onclick="cambiarFondo(1)" id="circulo1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2 circulitos2-seleccionado" viewBox="0 0 16 16">
+                            <p> <svg onclick="cambiarFondo(1)" id="circuloo1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2 circulitos2-seleccionado" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                              </svg></p> <p> <svg onclick="cambiarFondo(2)" id="circulo2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2" viewBox="0 0 16 16">
+                              </svg></p> <p> <svg onclick="cambiarFondo(2)" id="circuloo2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                              </svg></p> <p> <svg onclick="cambiarFondo(3)" id="circulo3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2" viewBox="0 0 16 16">
+                              </svg></p> <p> <svg onclick="cambiarFondo(3)" id="circuloo3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle circulitos2" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                               </svg></p> 
                               </svg></p>
                           </div>
-<!-- 
-                          <div class="circulos">
-                            <p class="linea"></p>
-                            <p> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-circle circulitos" viewBox="0 0 16 16">
-                                <path style="color:#fb5000;" d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                              </svg></p>   
-                            <p> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-circle circulitos" viewBox="0 0 16 16">
-                                <path style="color: #bebec0;" d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                              </svg></p>   
-                            <p> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-circle circulitos" viewBox="0 0 16 16">
-                                <path style="color: #bebec0;" d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                              </svg></p>   
-                          </div> -->
                         </div>
                 </div>
 
-                <div class="col-md-7 col-menu" id="fondo" >
-                    <!-- MENU FIJO  -->
-                      <div>
-                      </div>
-                      <div class="row clase-row"  id="menu">
-                        <div class="nav-opciones me-right">
+                <div class="col-md-7 col-menu" id="fondo">
+                  <!-- MENU FIJO  -->
+                  <div class="row clase-row" id="menu">
+                      <div class="nav-opciones me-right" id="menu11">
                           <div class="logoimg" id="imgg">
-                          <img id="logofijo" class="img-fijo" src="img/CAKE.jpg"  alt="">
-                        </div>
-                          <a class="inicio" href="">Inicio</a>
-                            <a class="menu" href="#">Menu</a>
-                            <a class="especialidad"href="#">Especialidades</a>
-                            <a class="reservacion" href="#">Reservaciones</a>
-                            <a class="contacto" href="#" class="btn-contactanos">Contacto</a> 
+                              <img id="logofijo" class="img-fijo" src="img/logoTopManglar.svg" alt="" />
                           </div>
-                    </div>
-                </div>
-
-                
-                
+                          <div class="fijo-opciones" id="fijoo">
+                              <a class="inicio" href="">Inicio</a>
+                              <a class="menu" href="#menuprincipal">Menu</a>
+                              <a class="contacto" href="#contacto" class="btn-contactanos">Contacto</a>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <div class="row cuadritos">
+                      <div class="col-6 cuadrito-blanco" onclick="cambiarFondo(1, 'lado', 'izq')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                      </div>
+                      <div class="col-6 cuadrito-negro" onclick="cambiarFondo(1, 'lado')" id="boxN" >
+                        <svg style="color: #ff4438;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                      </div>
+                      <!-- <div class="col-6 cuadrito-negro2 zzz" onclick="cambiarFondo2(3)" id="boxN2" >
+                        <svg style="color: #ff4438;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                      </div> -->
+                  </div>
+              </div>              
             </div>
         </div>
     </section>
@@ -142,8 +140,8 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6" style="padding: 0;">
-            <div>
-              <img class="img-comida" src="img/comida.jpg" alt="">
+            <div class="fondo-seccion2">
+              <!-- <img class="img-comida" src="img/seccion2.jpg" alt=""> -->
             </div>
           </div>
           <div class="col-md-6 sobre">  
@@ -162,23 +160,13 @@
                   <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                 </svg></span></a>
             </div>
-<!-- 
-            <a class="btn btn-1 negro" style="font-size: 10px; padding-top: 12px; background: #fb5000!important;">
-              <svg>
-                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-              </svg>
-              Obtener dirección <span><svg style="margin-left: 5px;width: 12px;height: 25px;height: 24px;position: unset;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-              </svg></span>
-            </a> -->
-
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="seccion3">
+    <section class="seccion3" id="menuprincipal">
       <div class="container-fluid">
         <div class="discover">
           <p class="linea"></p>
@@ -188,111 +176,928 @@
 
         <div class="col-md-12">
           <div class="categorias">
-            <h2 class="titulos" >FRUTAS</h2>
-            <div class="info-categorias">
-              <div class="categoria-img" style="background-image: url(img/fresa.jpg);">
-                <!-- <img src="img/fresa.jpg" alt=""> -->
-              </div>
-              <div class="categoria-texto">
-                <div class="textoyprecio">
-                  <h2 >MOUSSE DE FRESA Y MENTA </h2>
-                  <span class="precio">$100.00</span>
+
+
+            <h2 class="titulos" >CEVICHES & TOSTADAS</h2>
+
+            <div id="modal1">
+              <div class="info-categorias" id="modal-info1">
+                <svg id="icono1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" onclick="cerrarModal('modal1','modal-info1', 'modal-img1', 'modal-texto1', 'icono1')">
+                  <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+                </svg>
+
+                <div class="categoria-img" id="modal-img1" style="background-image: url(img/producto.jpg);" onclick="mostrarModal('modal1','modal-info1', 'modal-img1', 'modal-texto1', 'icono1')">
+                <!-- <div class="categoria-img" id="modal-img" style="background-image: url(img/producto.jpg);" onclick="mostrarModal('1')"> -->
+                  <!-- <img src="img/fresa.jpg" alt=""> -->
                 </div>
-                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <div class="categoria-texto" id="modal-texto1">
+                  <div class="textoyprecio" >
+                    <h2 >CEVICHE ATUN</h2>
+                    <span class="precio">$160.00</span>
+                  </div>
+                  <p class="descripcion">-Atun + aguacate + salsa ponzu + pepino cubos + 
+                    cebollín verde + cítricos + cebolla tempura + salsa anguila
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="info-categorias">
-              <div class="categoria-img" style="background-image: url(img/ENSALADA.jpg); ">
-                <!-- <img src="img/ENSALADA.jpg" alt=""> -->
+
+          <div id="modal2">
+            <div class="info-categorias" id="modal-info2">
+              <svg id="icono2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" onclick="cerrarModal('modal2','modal-info2', 'modal-img2', 'modal-texto2', 'icono2')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img2" style="background-image: url(img/producto.jpg); "onclick="mostrarModal('modal2','modal-info2', 'modal-img2', 'modal-texto2' , 'icono2')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
               </div>
-              <div class="categoria-texto">
+              <div class="categoria-texto"  id="modal-texto2">
                 <div class="textoyprecio">
-                  <h2 >ENSALADA DE CANASTA DE FRUTAS DEL BOSQUE </h2>
-                  <span class="precio">$400.00</span>
+                  <h2 class="titul">CEVICHE DE CAMARON & CHILE DE ARBOL </h2>
+                  <span class="precio">$240.00</span>
                 </div>
-                  <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <p class="descripcion">-Camaron + cítricos + chile de árbol tatemado <br>
+                  Cebolla morada + pepino + salsa manhattan + salsa coctelera + aguacate
+                </p>
+              </div>
+            </div>
+          </div>
+                                
+          <div id="modal3">
+
+            <div class="info-categorias" id="modal-info3">
+              <svg id="icono3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" onclick="cerrarModal('modal3','modal-info3', 'modal-img3', 'modal-texto3', 'icono3')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <svg id="icono3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img3" style="background-image: url(img/producto.jpg);" onclick="mostrarModal('modal3','modal-info3', 'modal-img3', 'modal-texto3' , 'icono3')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto3">
+                <div class="textoyprecio">
+                  <h2>CEVICHE DE PESCADO</h2>
+                  <span class="precio">$100.00</span>
+                </div>
+                <p class="descripcion">-Cochito + cítricos + cebolla morada + serranito <br>
+                    Pepino + tomate + ahogado en caldo de camaron <br>
+                    Cilantro fresco + aguacate                   
+                  </p>
+                </div>
+              </div>
+            </div>
+
+              <div id="modal4">  
+              <div class="info-categorias" id="modal-info4">
+                <svg id="icono4" xmlns="http://www.w2.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" onclick="cerrarModal('modal4','modal-info4', 'modal-img4', 'modal-texto4', 'icono4')">
+                  <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+                </svg>
+                <svg id="icono3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16">
+                  <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+                </svg>
+                <div class="categoria-img" id="modal-img4" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal4','modal-info4', 'modal-img4', 'modal-texto4', 'icono4')">
+                  <!-- <img src="img/producto.jpg" alt=""> -->
+                </div>
+                <div class="categoria-texto"  id="modal-texto4">
+                  <div class="textoyprecio">
+                    <h2>CEVICHE DE CAMARON</h2>
+                    <span class="precio">$130.00</span>
+                  </div>
+                    <p class="descripcion">-Camaron + cebolla morada + tomate + serranito <br>
+                      Pepino + ahogado en caldo de camaron
+                      Salsa coctelera + aguacate.  
+                    </p>                
+                </div>
+              </div>
+            </div>
+
+            <div id="modal5">  
+              <div class="info-categorias"  id="modal-info5">
+                <svg id="icono5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" onclick="cerrarModal('modal5','modal-info5', 'modal-img5', 'modal-texto5', 'icono5')">
+                  <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+                </svg>
+                <div class="categoria-img" id="modal-img5" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal5','modal-info5', 'modal-img5', 'modal-texto5', 'icono5')">
+                  <!-- <img src="img/producto.jpg" alt=""> -->
+                </div>
+                <div class="categoria-texto" id="modal-texto5">
+                  <div class="textoyprecio">
+                    <h2>CEVICHE VERDE DE CAMARON</h2>
+                    <span class="precio">$120.00</span>
+                  </div>
+                    <p class="descripcion">-Camaron + salsa verde pericos + cebolla morada + pepino + aguacate.
+                    </p>                
+                </div>
+              </div>
+            </div>
+
+            <div id="modal6">  
+            <div class="info-categorias" id="modal-info6">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono6" onclick="cerrarModal('modal6','modal-info6', 'modal-img6', 'modal-texto6', 'icono6')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img6" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal6','modal-info6', 'modal-img6', 'modal-texto6', 'icono6')">
+                <!-- <img src="img/producto.jpg" al onclick="mostrarModal('modal5','modal-info5', 'modal-img5', 'modal-texto5', 'iconox')"t=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto6">
+                <div class="textoyprecio">
+                  <h2>CEVICHE MIXTO COCIDO</h2>
+                  <span class="precio">$130.00</span>
+                </div>
+                  <p class="descripcion">-Camaron cocido + pulpo + jaiba desmenuzada <br>
+                    cebolla morada + tomate + cilantro + salsa coctelera <br>
+                    pepino + kermato preparado + cilantro fresco + aguacate.                  
+                    </p>
+              </div>
+            </div>
+            </div>
+            <div id="modal7">  
+            <div class="info-categorias"  id="modal-info7">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono7" onclick="cerrarModal('modal7','modal-info7', 'modal-img7', 'modal-texto7', 'icono7')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img7"  style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal7','modal-info7', 'modal-img7', 'modal-texto7', 'icono7')">
+                <!-- <img src="img/producto.jpg" al onclick="mostrarModal('modal5','modal-info5', 'modal-img5', 'modal-texto5', 'iconox')"t=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto7">
+                <div class="textoyprecio">
+                  <h2 >CEVICHE DE ROBALO (disponible en temporada)</h2>
+                  <span class="precio">$130.00</span>
+                </div>
+                  <p class="descripcion">-Robalo fresco + cebolla morada + cítricos + jalapeño rojo	<br>
+                    Cebollín verde + pepino  + mango haden + pepita de calabaza <br>
+                     Cilantro fresco + perejil +salsa ponzu + aceite de olivo.
+                    </p>
+              </div>
+            </div>
+            </div>
+            <div id="modal8">  
+            <div class="info-categorias"  id="modal-info8">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono8" onclick="cerrarModal('modal8','modal-info8', 'modal-img8', 'modal-texto8', 'icono8')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img8"  style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal8','modal-info8', 'modal-img8', 'modal-texto8', 'icono8')">
+                <!-- <img src="img/producto.jpg" al onclick="mostrarModal('modal5','modal-info5', 'modal-img5', 'modal-texto5', 'iconox')"t=""> -->
+              </div>
+              <div class="categoria-texto"  id="modal-texto8">
+                <div class="textoyprecio">
+                  <h2 >CEVICHE MITOTERO</h2>
+                  <span class="precio">$140.00</span>
+                </div>
+                  <p class="descripcion">-Camarón cocido + cochito + pulpo cocido + camarón crudo + calamar <br>
+                    Cítricos + chocolatas + ostión fresco + caracol + cebolla morada + pepino <br>
+                   Tomate fresco + jalapeño + cilantro +ahogado en caldo de camaron <br>
+                   Salsa manhattan + salsa siete chiles.
+                    </p>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <br><br><br>
+          <div class="categorias">
+            <h2 class="titulos" >PLATILLOS PARA COMPARTIR</h2>
+
+            <div id="modal9">  
+            <div class="info-categorias"  id="modal-info9">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono9" onclick="cerrarModal('modal9','modal-info9', 'modal-img9', 'modal-texto9', 'icono9')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+             
+              <div class="categoria-img" id="modal-img9"  style="background-image: url(img/producto.jpg);" onclick="mostrarModal('modal9','modal-info9', 'modal-img9', 'modal-texto9', 'icono9')">
+                <!-- <img src="img/fresa.jpg" al onclick="mostrarModal('modal5','modal-info5', 'modal-img5', 'modal-texto5', 'iconox')"t=""> -->
+              </div>
+              <div class="categoria-texto"  id="modal-texto9">
+                <div class="textoyprecio">
+                  <h2 >BOTANA PARA PICAR</h2>
+                  <span class="precio">$360.00</span>
+                </div>
+                  <p class="descripcion">-Camaron natural + pulpo cocido + callo robalo + manitas de jaiba + serranito + pepino <br>
+                    Cebolla morada + salsa coctelera + salsa manhattan <br>
+                    Tomate + aguacate + jugo de limon. <br>
+                    <span style="font-weight: 700;">-Disponible en: ½ Orden.</span> 
+                    
+                    </p>
+              </div>
+              </div>
+            </div>
+            <div id="modal10">  
+            <div class="info-categorias" id="modal-info10">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono10" onclick="cerrarModal('modal10','modal-info10', 'modal-img10', 'modal-texto10', 'icono10')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+            
+              <div class="categoria-img" id="modal-img10" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal10','modal-info10', 'modal-img10', 'modal-texto10', 'icono10')">
+                <!-- <img src="img/producto.jpg" al onclick="mostrarModal('modal5','modal-info5', 'modal-img5', 'modal-texto5', 'iconox')"t=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto10">
+                <div class="textoyprecio">
+                  <h2>CALLO DE LOBINA( disponibilidad en temporada)</h2>
+                  <span class="precio">$150.00</span>
+                </div>
+                  <p class="descripcion">-Camaron + cítricos + pepino + cebolla morada + chile chiltepin <br>
+                    Serranito + chile chiltepin + kermato preparado + aguacate + serranito.
+                   </p>
+              </div>
+              </div>
+            </div>
+            <div id="modal11">   
+            <div class="info-categorias" id="modal-info11">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono11" onclick="cerrarModal('modal11','modal-info11', 'modal-img11', 'modal-texto11', 'icono11')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+           
+              <div class="categoria-img" id="modal-img11" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal11','modal-info11', 'modal-img11', 'modal-texto11', 'icono11')">
+                <!-- <img src="img/producto.jpg" al onclick="mostrarModal('modal5','modal-info5', 'modal-img5', 'modal-texto5', 'iconox')"t=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto11">
+                <div class="textoyprecio">
+                  <h2 >CALLO DE HACHA </h2>
+                  <span class="precio">$250.00</span>
+                </div>
+                <p class="descripcion">-Callo de hacha + cítricos + pepino media luna <br>
+                  Cebolla morada +Salsa verde pericos + salsa manhattan <br>
+                   Serranito + cilantro + rábano +  aguacate + Togarashi.
+                 </p>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+          <div class="categorias">
+            <h2 class="titulos" >TORRES DE MARISCOS ESTILO MANGLAR</h2>
+            <div id="modal12">  
+            <div class="info-categorias" id="modal-info12">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono12" onclick="cerrarModal('modal12','modal-info12', 'modal-img12', 'modal-texto12', 'icono12')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+             
+              <div class="categoria-img"  id="modal-img12" style="background-image: url(img/producto.jpg);" onclick="mostrarModal('modal12','modal-info12', 'modal-img12', 'modal-texto12', 'icono12')"> 
+                <!-- <img src="img/fresa.jpg" al onclick="mostrarModal('modal5','modal-info5', 'modal-img5', 'modal-texto5', 'iconox')"t=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto12">
+                <div class="textoyprecio">
+                  <h2 >TORRE PULPO CAMARON & JAIBA </h2>
+                  <span class="precio">$190.00</span>
+                </div>
+                <p class="descripcion">-Salsa Diávolo + Jaiba desmenuzada + camaron cocido <br>
+                  Pulpo + tomate + cebolla morada + cítricos <br>
+                  Pepino julianas + salsa manhattan + salsa coctelera. <br>
+                 <span style="font-weight: 700;">-Disponible en: Tostada</span> 
+
+                 </p>
+              </div>
+              </div>
+            </div>
+            <div id="modal13">  
+            <div class="info-categorias"  id="modal-info13">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono13" onclick="cerrarModal('modal13','modal-info13', 'modal-img13', 'modal-texto13', 'icono13')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+            
+              <div class="categoria-img" id="modal-img13"  style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal13','modal-info13', 'modal-img13', 'modal-texto13', 'icono13')">
+                <!-- <img src="img/producto.jpg" al onclick="mostrarModal('modal5','modal-info5', 'modal-img5', 'modal-texto5', 'iconox')"t=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto13">
+                <div class="textoyprecio">
+                  <h2 >TORRE MIXTA </h2>
+                  <span class="precio">$180.00</span>
+                </div>
+                <p class="descripcion">-Pepino + aguacate + ceviche de camaron + camaron cocido <br>
+                  Ceviche pescado + pulpo + tomate + camaron crudo +cebolla morada <br>
+                  Cilantro + Salsa siete chiles  + kermato preparado.
+                 </p>
+              </div>
+            </div>
+            </div>
+            <div id="modal14">  
+            <div class="info-categorias" id="modal-info14">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono14" onclick="cerrarModal('modal14','modal-info14', 'modal-img14', 'modal-texto14', 'icono14')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img14"  style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal14','modal-info14', 'modal-img14', 'modal-texto14', 'icono14')">
+                <!-- <img src="img/producto.jpg" al onclick="mostrarModal('modal5','modal-info5', 'modal-img5', 'modal-texto5', 'iconox')"t=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto14">
+                <div class="textoyprecio">
+                  <h2 >TORRE DE LUXE </h2>
+                  <span class="precio">$210.00</span>
+                </div>
+                <p class="descripcion">- Jaiba desmenuzada + camaron crudo + cítricos + camaron cocido <br>
+                  Pulpo cocido + callo de hacha + chocolatas + salsa spicy rocka + pepino <br>
+                  Jalapeño + salsa siete chiles  + cebolla morada + kermato preparado <br>
+                  Salsa verde pericos + tomate + salsa coctelera + cilantro + aguacate.
+
+                 </p>
+              </div>
               </div>
             </div>
           </div>
           <br><br><br>
           <div class="categorias">
-            <h2 class="titulos" >POSTRES</h2>
-            <div class="info-categorias">
-              <div class="categoria-img" style="background-image: url(img/panna.jpg);">
+            <h2 class="titulos" >CLAMATOS PREPARADOS</h2>
+
+            <div id="modal15">  
+            <div class="info-categorias" id="modal-info15">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono15" onclick="cerrarModal('modal15','modal-info15', 'modal-img15', 'modal-texto15', 'icono15')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img15" style="background-image: url(img/producto.jpg);"  onclick="mostrarModal('modal15','modal-info15', 'modal-img15', 'modal-texto15', 'icono15')">
                 <!-- <img src="img/fresa.jpg" alt=""> -->
               </div>
-              <div class="categoria-texto">
+              <div class="categoria-texto" id="modal-texto15">
                 <div class="textoyprecio">
-                  <h2 >PANNA COTTA ITALIANA  </h2>
-                  <span class="precio">$90.00</span>
+                  <h2 >CLAMATO PREPARADO NATURAL </h2>
+                  <span class="precio">$70.00</span>
                 </div>
-                  <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <p class="descripcion">-Delicioso Kermato preparado con vaso escarchado con nuestra mezcla especial de 3 chiles, jugo de limón, kermato preparado, simplemente refrescante.
+                 </p>
               </div>
             </div>
-            <div class="info-categorias">
-              <div class="categoria-img" style="background-image: url(img/CAKE.jpg); ">
-                <!-- <img src="img/ENSALADA.jpg" alt=""> -->
+            </div>
+            <div id="modal16">  
+            <div class="info-categorias" id="modal-info16">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono16" onclick="cerrarModal('modal16','modal-info16', 'modal-img16', 'modal-texto16', 'icono16')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img16" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal16','modal-info16', 'modal-img16', 'modal-texto16', 'icono16')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
               </div>
-              <div class="categoria-texto">
+              <div class="categoria-texto" id="modal-texto16">
                 <div class="textoyprecio">
-                  <h2 >PASTEL DE AVELLANAS </h2>
-                  <span class="precio">$120.00</span>
+                  <h2 >CLAMATO MATA CRUDA </h2>
+                  <span class="precio">$150.00</span>
                 </div>
-                  <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <p class="descripcion">-Delicioso Kermato preparado con vaso escarchado con nuestra mezcla especial de 3 chiles, jugo de limón, kermato preparado, cerveza de su elección, 3 camarones ahogados en nuestra salsa especial, 3 camarones cocidos, 2 almejas chocolatas, 2 ostiones  frescos  vara de apio, 10 gr carne seca
+                 </p>
+              </div>
               </div>
             </div>
-            <div class="info-categorias">
-              <div class="categoria-img" style="background-image: url(img/CREMA.jpg); ">
-                <!-- <img src="img/ENSALADA.jpg" alt=""> -->
+            <div id="modal17">  
+            <div class="info-categorias" id="modal-info17">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono17" onclick="cerrarModal('modal17','modal-info17', 'modal-img17', 'modal-texto17', 'icono17')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img17" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal17','modal-info17', 'modal-img17', 'modal-texto17', 'icono17')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
               </div>
-              <div class="categoria-texto">
+              <div class="categoria-texto"  id="modal-texto17">
                 <div class="textoyprecio">
-                  <h2 >PASTEL DE CREMA BATIDA Y CHOCOLATE </h2>
+                  <h2 >CLAMATO MICHELADO </h2>
+                  <span class="precio">$70.00</span>
+                </div>
+                <p class="descripcion">-Delicioso Kermato preparado con vaso escarchado con nuestra mezcla especial de 3 chiles, jugo de limón, kermato preparado, simplemente refrescante.
+                 </p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+          <div class="categorias">
+            <h2 class="titulos" >AGUACHILES</h2>
+
+            <div id="modal18">  
+            <div class="info-categorias" id="modal-info18">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono18" onclick="cerrarModal('modal18','modal-info18', 'modal-img18', 'modal-texto18', 'icono18')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img18" style="background-image: url(img/producto.jpg);" onclick="mostrarModal('modal18','modal-info18', 'modal-img18', 'modal-texto18', 'icono18')">
+                <!-- <img src="img/fresa.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto"  id="modal-texto18">
+                <div class="textoyprecio">
+                  <h2 >AGUACHIL MANGO HABANERO</h2>
+                  <span class="precio">$150.00</span>
+                </div>
+                <p class="descripcion">-Camaron + cítricos + pepino + cebolla morada <br>
+                  Salsa mango habanera + serranito + aguacate + Togarashi.                 
+                 </p>
+              </div>
+              </div>
+            </div>
+
+            <div id="modal19"> 
+            <div class="info-categorias" id="modal-info19">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono19" onclick="cerrarModal('modal19','modal-info19', 'modal-img19', 'modal-texto19', 'icono19')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img19"  style="background-image: url(img/producto.jpg); "onclick="mostrarModal('modal19','modal-info19', 'modal-img19', 'modal-texto19', 'icono19')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto19">
+                <div class="textoyprecio">
+                  <h2 >AGUACHIL VERDE TRADICIONAL</h2>
+                  <span class="precio">$140.00</span>
+                </div>
+                <p class="descripcion">-Camaron + cítricos + cebolla morada + pepino <br>
+                  Salsa verde pericos + aguacate + serranito.
+                  
+                 </p>
+              </div>
+              </div>
+            </div>
+            <div id="modal20"> 
+            <div class="info-categorias" id="modal-info20">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono20" onclick="cerrarModal('modal20','modal-info20', 'modal-img20', 'modal-texto20', 'icono20')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img20"  style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal20','modal-info20', 'modal-img20', 'modal-texto20', 'icono20')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto20">
+                <div class="textoyprecio">
+                  <h2 >AGUACHIL SIE7E CHILES PICANTE </h2>
                   <span class="precio">$160.00</span>
                 </div>
-                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <p class="descripcion">-Camaron + cítricos + cebolla morada + salsa siete chiles <br>
+                  Pepino + aguacate + tomate gajos.
+                 </p>
+              </div>
               </div>
             </div>
-            <div class="info-categorias">
-              <div class="categoria-img" style="background-image: url(img/CEREZAS.jpg); ">
-                <!-- <img src="img/ENSALADA.jpg" alt=""> -->
+
+            <div id="modal21"> 
+            <div class="info-categorias"  id="modal-info21">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono21" onclick="cerrarModal('modal21','modal-info21', 'modal-img21', 'modal-texto21', 'icono21')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img21" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal21','modal-info21', 'modal-img21', 'modal-texto21', 'icono21')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
               </div>
-              <div class="categoria-texto">
+              <div class="categoria-texto" id="modal-texto21">
                 <div class="textoyprecio">
-                  <h2 >PASTEL EMPANADO CON CEREZAS </h2>
-                  <span class="precio">$200.00</span>
+                  <h2 >AGUACHIL DIABLO</h2>
+                  <span class="precio">$150.00</span>
                 </div>
-                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <p class="descripcion">-Camaron + cítricos + cebolla morada + chiltepin <br>
+                  Pepino + serranito + chile habanero + kermato preparado + aguacate.
+                 </p>
+              </div>
+            </div>
+            </div>
+          </div>
+          <br><br><br>
+          <div class="categorias">
+            <h2 class="titulos" >TIRADITOS</h2>
+
+            <div id="modal22"> 
+            <div class="info-categorias"  id="modal-info22">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono22" onclick="cerrarModal('modal22','modal-info22', 'modal-img22', 'modal-texto22', 'icono22')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img22" style="background-image: url(img/producto.jpg);" onclick="mostrarModal('modal22','modal-info22', 'modal-img22', 'modal-texto22', 'icono22')">
+                <!-- <img src="img/fresa.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto"  id="modal-texto22">
+                <div class="textoyprecio">
+                  <h2 >TIRADITO ATUN</h2>
+                  <span class="precio">$220.00</span>
+                </div>
+                <p class="descripcion">-Atun + cítricos + cebolla morada + salsa poke + cebollín verde  <br>
+                  Aguacate + chile jalapeño + aguacate + tiras de tortillas + salsa soya ponzu.
+                                 
+                 </p>
+              </div>
+              </div>
+            </div>
+            <div id="modal23"> 
+            <div class="info-categorias" id="modal-info23">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono23" onclick="cerrarModal('modal23','modal-info23', 'modal-img23', 'modal-texto23', 'icono23')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img23" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal23','modal-info23', 'modal-img23', 'modal-texto23', 'icono23')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto23">
+                <div class="textoyprecio">
+                  <h2 >TIRADITO ROBALO</h2>
+                  <span class="precio">$190.00</span>
+                </div>
+                <p class="descripcion">-Robalo + cítricos + jalapeño rojo + cebolla tempura <br>
+                  Cremoso de aguacate   + cilantro fresco + salsa leche de ostión <br>
+                 Aguacate aro +  Togarashi.
+                 </p>
+              </div>
               </div>
             </div>
           </div>
           <br><br><br>
           <div class="categorias">
-            <h2 class="titulos" >HELADOS</h2>
-            <div class="info-categorias">
-              <div class="categoria-img" style="background-image: url(img/nieve1.jfif);">
+            <h2 class="titulos" >COCTELES</h2>
+            <div id="modal24"> 
+            <div class="info-categorias" id="modal-info24">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono24" onclick="cerrarModal('modal24','modal-info24', 'modal-img24', 'modal-texto24', 'icono24')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img24" style="background-image: url(img/producto.jpg);" onclick="mostrarModal('modal24','modal-info24', 'modal-img24', 'modal-texto24', 'icono24')">
                 <!-- <img src="img/fresa.jpg" alt=""> -->
               </div>
-              <div class="categoria-texto">
+              <div class="categoria-texto" id="modal-texto24">
                 <div class="textoyprecio">
-                  <h2 >HELADO DE FRUTAS DEL BOSQUE </h2>
-                  <span class="precio">$100.00</span>
+                  <h2 >COCTEL SINALOENSE</h2>
+                  <span class="precio">$150.00</span>
                 </div>
-                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <p class="descripcion">-Camaron cocido + pulpo + calamar + camaron crudo <br>
+                  Pata de mula + ostión + caracol + cebolla morada + pepino <br>
+                  Tomate + serranito + ahogado en caldo de camaron + cítricos + aguacate.
+                 </p>
               </div>
             </div>
-            <div class="info-categorias">
-              <div class="categoria-img" style="background-image: url(img/vainilla.jpg); ">
-                <!-- <img src="img/ENSALADA.jpg" alt=""> -->
+            </div>
+            <div id="modal25"> 
+            <div class="info-categorias" id="modal-info25">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono25" onclick="cerrarModal('modal25','modal-info25', 'modal-img25', 'modal-texto25', 'icono25')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img25"  style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal25','modal-info25', 'modal-img25', 'modal-texto25', 'icono25')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
               </div>
-              <div class="categoria-texto">
+              <div class="categoria-texto" id="modal-texto25">
                 <div class="textoyprecio">
-                  <h2 >FRESA CON VAINILLA </h2>
-                  <span class="precio">$400.00</span>
+                  <h2 >COCTEL DE CAMARON</h2>
+                  <span class="precio">$130.00</span>
                 </div>
-                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisi modi illum laboriosam blanditiis sit ipsum, perspiciatis error officiis corrupti eligendi! Accusantium tenetur qui deserunt?</p>
+                <p class="descripcion">-Camaron cocido + cítricos + cebolla blanca + pepino + tomate <br>
+                  Salsa coctelera + ahogado en caldo de camaron + aguacate. 
+                 </p>
+              </div>
               </div>
             </div>
+            <div id="modal26"> 
+            <div class="info-categorias" id="modal-info26">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono26" onclick="cerrarModal('modal26','modal-info26', 'modal-img26', 'modal-texto26', 'icono26')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img26" style="background-image: url(img/producto.jpg); "  onclick="mostrarModal('modal26','modal-info26', 'modal-img26', 'modal-texto26', 'icono26')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto26">
+                <div class="textoyprecio">
+                  <h2 >COCTEL DE CAMARON & PULPO</h2>
+                  <span class="precio">$150.00</span>
+                </div>
+                <p class="descripcion">- Camaron cocido + cítricos + cebolla morada + pepino + tomate <br>
+                  Salsa coctelera + ahogado en caldo de camaron + aguacate. 
+                 </p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+          <div class="categorias">
+            <h2 class="titulos" >COCINA CALIENTE</h2>
+            <div id="modal27"> 
+            <div class="info-categorias" id="modal-info27">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono27" onclick="cerrarModal('modal27','modal-info27', 'modal-img27', 'modal-texto27', 'icono27')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img27" style="background-image: url(img/producto.jpg);" onclick="mostrarModal('modal27','modal-info27', 'modal-img27', 'modal-texto27', 'icono27')">
+                <!-- <img src="img/fresa.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto27">
+                <div class="textoyprecio">
+                  <h2 >TACOS GOBERNADOR</h2>
+                  <span class="precio">$45.00</span>
+                </div>
+                <p class="descripcion">-Camaron + Salsa Gober + queso montana + limon gajo + aguacate. 
+                 </p>
+              </div>
+              </div>
+            </div>
+            <div id="modal28"> 
+            <div class="info-categorias"  id="modal-info28">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono28" onclick="cerrarModal('modal28','modal-info28', 'modal-img28', 'modal-texto28', 'icono28')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img28" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal28','modal-info28', 'modal-img28', 'modal-texto28', 'icono28')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto"  id="modal-texto28"> 
+                <div class="textoyprecio">
+                  <h2 >TACO CAMARON ZARANDEADO</h2>
+                  <span class="precio">$45.00</span>
+                </div>
+                <p class="descripcion">-Camaron mariposa + adobo sarandeado + cebolla caramelizada <br>
+                  Chile Anaheim tatemado + queso montana +  cilantro +limon gajo
+                   
+                 </p>
+              </div>
+              </div>
+            </div>
+            <div id="modal29"> 
+            <div class="info-categorias"  id="modal-info29">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono29" onclick="cerrarModal('modal29','modal-info29', 'modal-img29', 'modal-texto29', 'icono29')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img29" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal29','modal-info29', 'modal-img29', 'modal-texto29', 'icono29')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto29">
+                <div class="textoyprecio">
+                  <h2 >TACO DE MARLIN CON QUESO</h2>
+                  <span class="precio">$45.00</span>
+                </div>
+                <p class="descripcion">-Marlín + queso montana + salsa verde tomatillo + limon gajo.
+                 </p>
+              </div>
+            </div>
+            </div>
+          </div>
+          <br><br><br>
+          <div class="categorias">
+            <h2 class="titulos" >ENTRADAS </h2>
+            <div id="modal30"> 
+            <div class="info-categorias" id="modal-info30">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono30" onclick="cerrarModal('modal30','modal-info30', 'modal-img30', 'modal-texto30', 'icono30')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img30" style="background-image: url(img/producto.jpg);" onclick="mostrarModal('modal30','modal-info30', 'modal-img30', 'modal-texto30', 'icono30')">
+                <!-- <img src="img/fresa.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto30">
+                <div class="textoyprecio">
+                  <h2 >LAS CHOCO (ALMEJAS CHOCOLATA X PZA)</h2>
+                  <span class="precio">$25.00</span>
+                </div>
+                <p class="descripcion">-Al Natral o preparados al estilo Manglar. 
+                 </p>
+              </div>
+              </div>
+            </div>
+            <div id="modal31"> 
+            <div class="info-categorias"  id="modal-info31">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono31" onclick="cerrarModal('modal31','modal-info31', 'modal-img31', 'modal-texto31', 'icono31')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img31" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal31','modal-info31', 'modal-img31', 'modal-texto31', 'icono31')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto31">
+                <div class="textoyprecio">
+                  <h2 >LAS DE MULA ( DOCENA PATAS DE MULA) </h2>
+                  <span class="precio">$90.00</span>
+                </div>
+                <p class="descripcion">-Al Natural o preparados al estilo Manglar.
+                   
+                 </p>
+              </div>
+              </div>
+            </div>
+            <div id="modal32"> 
+            <div class="info-categorias"  id="modal-info32">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono32" onclick="cerrarModal('modal32','modal-info32', 'modal-img32', 'modal-texto32', 'icono32')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img32" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal32','modal-info32', 'modal-img32', 'modal-texto32', 'icono32')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto32">
+                <div class="textoyprecio">
+                  <h2 >LOS DE MAGLE ( DOCENAS OSTIAS )</h2>
+                  <span class="precio">$130.00</span>
+                </div>
+                <p class="descripcion">-Al Natural o preparado al estilo Manglar
+                 </p>
+              </div>
+              </div>
+            </div>
+            <div id="modal33"> 
+            <div class="info-categorias" id="modal-info33">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono33" onclick="cerrarModal('modal33','modal-info33', 'modal-img33', 'modal-texto33', 'icono33')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img33" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal33','modal-info33', 'modal-img33', 'modal-texto33', 'icono33')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto33">
+                <div class="textoyprecio">
+                  <h2 >SHOTS DE OSTION</h2>
+                  <span class="precio">$29.00</span>
+                </div>
+                <p class="descripcion">-Salsa Manhattan + Limon + Kermato Especial + Chile. 
+                 </p>
+              </div>
+            </div>
+            </div>
+            <div id="modal34">
+            <div class="info-categorias"  id="modal-info34">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono34" onclick="cerrarModal('modal34','modal-info34', 'modal-img34', 'modal-texto34', 'icono34')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img34" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal34','modal-info34', 'modal-img34', 'modal-texto34', 'icono34')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto34">
+                <div class="textoyprecio">
+                  <h2 >SHOT DE CAMARON (CRUDO O COCIDO)</h2>
+                  <span class="precio">$33.00</span>
+                </div>
+                <p class="descripcion">-Kermato Especial + Limon + Camaron Cocido + Consomé Camaron + Cebolla + Pepino.
+                 </p>
+              </div>
+              </div>
+            </div>
+            <div id="modal35">
+            <div class="info-categorias" id="modal-info35">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono35" onclick="cerrarModal('modal35','modal-info35', 'modal-img35', 'modal-texto35', 'icono35')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img35" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal35','modal-info35', 'modal-img35', 'modal-texto35', 'icono35')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto35">
+                <div class="textoyprecio">
+                  <h2 >SHOTS DE PATAS DE MULA</h2>
+                  <span class="precio">$29.00</span>
+                </div>
+                <p class="descripcion">-Patas de Mula + Cebolla Morada + Chiltepin + Kermato Especial + Limon + Sie7e Chiles
+                 </p>
+              </div>
+            </div>
+            </div>
+            <div id="modal36">
+            <div class="info-categorias" id="modal-info36">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono36" onclick="cerrarModal('modal36','modal-info36', 'modal-img36', 'modal-texto36', 'icono36')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img36" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal36','modal-info36', 'modal-img36', 'modal-texto36', 'icono36')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto36">
+                <div class="textoyprecio">
+                  <h2 >SHOT DE ALMEJAS CHOCOLATAS</h2>
+                  <span class="precio">$28.00</span>
+                </div>
+                <p class="descripcion">-Almeja Chocolata + Limon + Salsa Verde Perico + Kermato Especial.
+                 </p>
+              </div>
+            </div>
+            </div>
+          </div>
+          <br><br><br>
+          <div class="categorias">
+            <h2 class="titulos" >TOSTADAS </h2>
+            <div id="modal37">
+            <div class="info-categorias"  id="modal-info37">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono37" onclick="cerrarModal('modal37','modal-info37', 'modal-img37', 'modal-texto37', 'icono37')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img37" style="background-image: url(img/producto.jpg);" onclick="mostrarModal('modal37','modal-info37', 'modal-img37', 'modal-texto37', 'icono37')">
+                <!-- <img src="img/fresa.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto"  id="modal-texto37">
+                <div class="textoyprecio">
+                  <h2 >TOSTADAS DE ATUN</h2>
+                  <span class="precio">$70.00</span>
+                </div>
+                <!-- <p class="descripcion">-Al Natral o preparados al estilo Manglar. 
+                 </p> -->
+              </div>
+              </div>
+            </div>
+            <div id="modal38">
+            <div class="info-categorias" id="modal-info38">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono38" onclick="cerrarModal('modal38','modal-info38', 'modal-img38', 'modal-texto38', 'icono38')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img38" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal38','modal-info38', 'modal-img38', 'modal-texto38', 'icono38')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto38">
+                <div class="textoyprecio">
+                  <h2 >CEVICHE DE CAMARON & CHILE DE ARBOL </h2>
+                  <span class="precio">$60.00</span>
+                </div>
+                <!-- <p class="descripcion">-Al Natural o preparados al estilo Manglar</p> -->
+              </div>
+              </div>
+            </div>
+            <div id="modal39">
+            <div class="info-categorias" id="modal-info39">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono39" onclick="cerrarModal('modal39','modal-info39', 'modal-img39', 'modal-texto39', 'icono39')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img39" style="background-image: url(img/producto.jpg); "  onclick="mostrarModal('modal39','modal-info39', 'modal-img39', 'modal-texto39', 'icono39')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto39">
+                <div class="textoyprecio">
+                  <h2 >CEVICHE DE PESCADO</h2>
+                  <span class="precio">$40.00</span>
+                </div>
+                <!-- <p class="descripcion">-Al Natural o preparado al estilo Manglar
+                 </p> -->
+              </div>
+              </div>
+            </div>
+            <div id="modal40">
+            <div class="info-categorias" id="modal-info40">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono40" onclick="cerrarModal('modal40','modal-info40', 'modal-img40', 'modal-texto40', 'icono40')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img40" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal40','modal-info40', 'modal-img40', 'modal-texto40', 'icono40')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto"  id="modal-texto40">
+                <div class="textoyprecio">
+                  <h2 >CEVICHE DE CAMARON</h2>
+                  <span class="precio">$50.00</span>
+                </div>
+                <!-- <p class="descripcion">-Salsa Manhattan + Limon + Kermato Especial + Chile. 
+                 </p> -->
+              </div>
+              </div>
+            </div>
+            <div id="modal41">
+            <div class="info-categorias" id="modal-info41">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono41" onclick="cerrarModal('modal41','modal-info41', 'modal-img41', 'modal-texto41', 'icono41')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img41" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal41','modal-info41', 'modal-img41', 'modal-texto41', 'icono41')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto"  id="modal-texto41">
+                <div class="textoyprecio">
+                  <h2 >CEVICHE VERDE DE CAMARON</h2>
+                  <span class="precio">$50.00</span>
+                </div>
+                <!-- <p class="descripcion">-Kermato Especial + Limon + Camaron Cocido + Consomé Camaron + Cebolla + Pepino.
+                 </p> -->
+              </div>
+              </div>
+            </div>
+            <div id="modal42">
+            <div class="info-categorias"  id="modal-info42">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono42" onclick="cerrarModal('modal42','modal-info42', 'modal-img42', 'modal-texto42', 'icono42')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img" id="modal-img42" style="background-image: url(img/producto.jpg); "  onclick="mostrarModal('modal42','modal-info42', 'modal-img42', 'modal-texto42', 'icono42')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto42">
+                <div class="textoyprecio">
+                  <h2 >CEVICHE MIXTO COCIDO</h2>
+                  <span class="precio">$65.00</span>
+                </div>
+                <!-- <p class="descripcion">-Patas de Mula + Cebolla Morada + Chiltepin + Kermato Especial + Limon + Sie7e Chiles
+                 </p> -->
+              </div>
+            </div>
+            </div>
+            <div id="modal43">
+            <div class="info-categorias"  id="modal-info43">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono43" onclick="cerrarModal('modal43','modal-info43', 'modal-img43', 'modal-texto43', 'icono43')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img43" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal43','modal-info43', 'modal-img43', 'modal-texto43', 'icono43')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto43">
+                <div class="textoyprecio">
+                  <h2 >CEVICHE DE ROBALO (DISPONIBLE EN TEMPORADA)</h2>
+                  <span class="precio">$70.00</span>
+                </div>
+                <!-- <p class="descripcion">-Patas de Mula + Cebolla Morada + Chiltepin + Kermato Especial + Limon + Sie7e Chiles
+                 </p> -->
+              </div>
+            </div>
+            </div>
+            <div id="modal44">
+            <div class="info-categorias" id="modal-info44">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono44" onclick="cerrarModal('modal44','modal-info44', 'modal-img44', 'modal-texto44', 'icono44')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"  id="modal-img44"  style="background-image: url(img/producto.jpg); "onclick="mostrarModal('modal44','modal-info44', 'modal-img44', 'modal-texto44', 'icono44')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto44">
+                <div class="textoyprecio">
+                  <h2 >TOSTADA EMBARAZADA</h2>
+                  <span class="precio">$70.00</span>
+                </div>
+                <!-- <p class="descripcion">-Almeja Chocolata + Limon + Salsa Verde Perico + Kermato Especial.
+                 </p> -->
+              </div>
+              </div>
+            </div>
+            <div id="modal45">
+            <div class="info-categorias" id="modal-info45">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg iconoX" viewBox="0 0 16 16" id="icono45" onclick="cerrarModal('modal45','modal-info45', 'modal-img45', 'modal-texto45', 'icono45')">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg>
+              <div class="categoria-img"id="modal-img45" style="background-image: url(img/producto.jpg); " onclick="mostrarModal('modal45','modal-info45', 'modal-img45', 'modal-texto45', 'icono45')">
+                <!-- <img src="img/producto.jpg" alt=""> -->
+              </div>
+              <div class="categoria-texto" id="modal-texto45">
+                <div class="textoyprecio">
+                  <h2 >TOSTADA TOPOLO</h2>
+                  <span class="precio">$65.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -302,56 +1107,31 @@
 
     <div class="seccion4">
       <div class="container" style="position: relative; height: 450px;">
-        <div class="mapa-contenido">
-          <h3 class="mapa-texto">COMO LLEGAR</h3>
-          <p style="font-family: 'Great Vibes', cursive; font-size: 60px; color: black;">Locallizacion del Restaurante</p>
-          <p class="mapa-texto">880 COLONIA CENTRO, LOS MOCHIS</p>
-
-          
-          
-          <a class="btn btn-1 negro" style="font-size: 15px; border-radius: 0;">
-            VER EN EL MAPA
-          </a>
-        </div>
-        <div class="mapa" >
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57481.58818708936!2d-109.02554541584097!3d25.783796858310335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba2f42b635eac3%3A0xb624c34752328808!2sLos%20Mochis%2C%20Sin.!5e0!3m2!1ses!2smx!4v1620685530684!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1866.6831125092554!2d-103.38916489289515!3d20.654674427730555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428addb858f87bf%3A0x595cab53dbfac6d7!2sRinconada%20del%20Fuego%202876%2C%20Rinconada%20del%20Bosque%2C%2044530%20Guadalajara%2C%20Jal.!5e0!3m2!1ses!2smx!4v1620922573732!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
+      <div class="mapa-contenido">
+        <a class="btn btn-1 negro" href="https://goo.gl/maps/RgrZ3tz27AJFERup6" target="_blank" style="font-size: 15px; border-radius: 0; margin: 0;">
+          COMO LLEGAR
+        </a>
+      </div>
+     
     </div>
 
   <br>
   <footer>
-    <div class="container">
-        <div class="row clase-row" id="menu">
-            <div class="nav-opciones me-right" style="width: 60% !important; margin: auto;">
-                <a class="inicio" href="">Inicio</a>
-                <a class="menu" href="#">Menu</a>
-                <a class="especialidad" href="#">Especialidades</a>
-                <a class="reservacion" href="#">Reservaciones</a>
-                <a class="contacto" href="#" class="btn-contactanos">Contacto</a>
-            </div>
-        </div>
-
-        <div class="redes">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook icon" viewBox="0 0 16 16">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-          </svg>
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitter icon" viewBox="0 0 16 16">
-            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-          </svg>
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram icon" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-          </svg>
+    <div class="container" id="contacto">
+        <div class="redes" >
+          <a href="https://www.instagram.com/manglargdl/" target="_blank" style="text-decoration: none; color: black;">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram icon" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+          </a>
         </div>
         <br>
         <p style="color: #fb5000; margin: auto; font-size: 10px; text-align: center;">Todos los derechos reservados Restaurant® | Aviso de Privacidadaurant </p>
     </div>
     <br>
 </footer>
-
-    
     <script src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -361,4 +1141,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
+<!-- jclb98 -->
 </html>
+
+
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+</style>

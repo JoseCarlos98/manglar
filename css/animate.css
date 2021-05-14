@@ -81,16 +81,18 @@ p a:hover {
   transition: all 0.35s linear;
 }
 
-/* .btn-1:hover {
+.btn-1:hover {
   background: rgba(225, 51, 45, 0);
   font-weight: 300;
+  letter-spacing: 1px;
+  transition: 300ms all ease;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
 }
-.btn-1:hover rect {
-  stroke-width: 5;
-  stroke-dasharray: 15, 310;
-  stroke-dashoffset: 48;
-  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-} */
+.btn-1:hover rect { transition: 300ms all ease; stroke-width: 5; stroke-dasharray: 15, 310; stroke-dashoffset: 48; transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1); -webkit-transition: 300ms all ease; -moz-transition: 300ms all ease; -ms-transition: 300ms all ease; -o-transition: 300ms all ease;
+}
 
 .btn-2 {
   letter-spacing: 0;
