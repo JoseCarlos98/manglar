@@ -15,9 +15,9 @@ function cambiarFondo(x, p, lado) {
 
     if (p == 'lado') {
         if (lado == 'izq') {
-            num = num - 1;
+            num -= 1;
         }else{
-            num= num + 1 
+            num += 1 
         }
         if (num > 3) {
             num = 3
@@ -129,18 +129,18 @@ else{
 })   
 
 
-// document.querySelectorAll(".info-categorias img").forEach(el=>{
-    //     el.addEventListener("click", function(ev){
-        //         ev.stopPropagation();
-        //         this.parentNode.classList.add("active");
-        //     })
-        // });
+        document.querySelectorAll(".info-categorias img").forEach(el=>{
+            el.addEventListener("click", function(ev){
+                    ev.stopPropagation();
+                    this.parentNode.classList.add("active");
+            })
+        });
         
-        // document.querySelectorAll(".info-categorias").forEach(el=>{
-            //     el.addEventListener("click", function(ev){
-                //         this.classList.remove("active");
-                //     })
-                // })
+        document.querySelectorAll(".info-categorias").forEach(el=>{
+                el.addEventListener("click", function(ev){
+                        this.classList.remove("active");
+                    })
+                })
                 
                 
                 
@@ -172,20 +172,11 @@ else{
 
     function mostrarModal(a,b,c,d,e){
 
-        console.log(a);
-        console.log(b);
-        console.log(c);
-        console.log(d);
-        console.log(e);
-        // console.log(f);
-
         let modal1 = document.getElementById(a);
         let modal2 = document.getElementById(b);
         let modal3 = document.getElementById(c);
         let modal4 = document.getElementById(d);
         let modal5 = document.getElementById(e);
-        // let modal5 = document.getElementById(f);
-        console.log(modal1);
         
         modal1.classList.add('ver');                                    
         modal1.classList.add('modall');                                    
@@ -193,7 +184,6 @@ else{
         modal3.classList.add('modal-img');                                    
         modal4.classList.add('modal-texto');                                    
         modal5.classList.add('vericono');                                    
-        // modal5.classList.add('titul');                                    
     }
 
     function cerrarModal(a,b,c,d,e){
