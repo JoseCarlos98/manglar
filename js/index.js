@@ -5,7 +5,6 @@ let circulo3 = document.getElementById("circulo3");
 let circuloo1 = document.getElementById("circuloo1");
 let circuloo2 = document.getElementById("circuloo2");
 let circuloo3 = document.getElementById("circuloo3");
-// var h = 'h'
 let box = document.getElementById("boxN");
 let box2 = document.getElementById("boxN2");
 
@@ -129,75 +128,48 @@ else{
 })   
 
 
-        document.querySelectorAll(".info-categorias img").forEach(el=>{
-            el.addEventListener("click", function(ev){
-                    ev.stopPropagation();
-                    this.parentNode.classList.add("active");
-            })
-        });
-        
-        document.querySelectorAll(".info-categorias").forEach(el=>{
-                el.addEventListener("click", function(ev){
-                        this.classList.remove("active");
-                    })
-                })
-                
-                
-                
-    // function mostrarModal(a){
-    //     console.log(a);
-    //     la = 'modal'
+document.querySelectorAll(".info-categorias img").forEach(el=>{
+    el.addEventListener("click", function(ev){
+            ev.stopPropagation();
+            this.parentNode.classList.add("active");
+    })
+});
 
-    //     let c1 = `modal${a}`
-    //     let c2 = `modal-info${a}`
-    //     let c3 = `icono${a}`
-    //     let c4 = `modal-img${a}`
-    //     let c5 = `modal-texto${a}`
-    //     console.log(c1);
-    //     console.log(c2);
-            
-    //     let modal1 = document.getElementById(c1);
-    //     let modal2 = document.getElementById(c2);
-    //     let modal3 = document.getElementById(c3);
-    //     let modal4 = document.getElementById(c4);
-    //     let modal5 = document.getElementById(c5);
-    //     console.log(modal2);
-      
-    //     modal1.classList.add('modall');                                    
-    //     modal2.classList.add('info-modal');                                    
-    //     modal3.classList.add('modal-img');                                    
-    //     modal4.classList.add('modal-texto');                                    
-    //     modal5.classList.add('vericono'); 
-    // }
+document.querySelectorAll(".info-categorias").forEach(el=>{
+    el.addEventListener("click", function(ev){
+            this.classList.remove("active");
+    })
+})
 
-    function mostrarModal(a,b,c,d,e){
 
-        let modal1 = document.getElementById(a);
-        let modal2 = document.getElementById(b);
-        let modal3 = document.getElementById(c);
-        let modal4 = document.getElementById(d);
-        let modal5 = document.getElementById(e);
-        
-        modal1.classList.add('ver');                                    
-        modal1.classList.add('modall');                                    
-        modal2.classList.add('info-modal');                                    
-        modal3.classList.add('modal-img');                                    
-        modal4.classList.add('modal-texto');                                    
-        modal5.classList.add('vericono');                                    
-    }
+function mostrarModal(a,b,c,d,e){
 
-    function cerrarModal(a,b,c,d,e){
-        let modal1 = document.getElementById(a);
-        let modal2 = document.getElementById(b);
-        let modal3 = document.getElementById(c);
-        let modal4 = document.getElementById(d);
-        let modal5 = document.getElementById(e);
+    let modal1 = document.getElementById(a);
+    let modal2 = document.getElementById(b);
+    let modal3 = document.getElementById(c);
+    let modal4 = document.getElementById(d);
+    let modal5 = document.getElementById(e);
+    
+    modal1.classList.add('ver');                                    
+    modal1.classList.add('modall');                                    
+    modal2.classList.add('info-modal');                                    
+    modal3.classList.add('modal-img');                                    
+    modal4.classList.add('modal-texto');                                    
+    modal5.classList.add('vericono');                                    
+}
 
-        modal1.classList.remove('ver');                                    
-        modal1.classList.remove('modall');                                    
-        modal2.classList.remove('info-modal');                                    
-        modal3.classList.remove('modal-img');                                    
-        modal4.classList.remove('modal-texto');                                    
-        modal5.classList.remove('vericono');
+function cerrarModal(a,b,c,d,e){
+    let modal1 = document.getElementById(a);
+    let modal2 = document.getElementById(b);
+    let modal3 = document.getElementById(c);
+    let modal4 = document.getElementById(d);
+    let modal5 = document.getElementById(e);
 
-    }
+    modal1.classList.remove('ver');                                    
+    modal1.classList.remove('modall');                                    
+    modal2.classList.remove('info-modal');                                    
+    modal3.classList.remove('modal-img');                                    
+    modal4.classList.remove('modal-texto');                                    
+    modal5.classList.remove('vericono');
+
+}
